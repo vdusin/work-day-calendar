@@ -2,6 +2,7 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 var timeDisplayEl = $('#currentDay');
+// var timeBlockEl = $('') trying to use all the div ids for one function, How?
 
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
@@ -24,21 +25,39 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
 
 
-  // Click event and puts item into storage (How do i assign proper id? am i using row time-block, .saveBtn.... is this even complete?)
-  $('.saveBtn').click(function saveInternalStorage() {
-    var userInput = document.getElementById('').value;
-    localStorage.setItem('.saveBtn', userInput);
+  // Click event and puts item into storage (How do i assign proper id(hour-9,
+  //  should they all be the same?)? am i using row time-block, .saveBtn.... is this even complete?)
+  // there is no 'this' as refered to in the todo, confusion everywhere
+  $('.saveBtn').click(function saveInternalStorage(?) {
+    var userInput = document.getElementById('timeBlockEl?').value;
+    localStorage.setItem('.saveBtn?', userInput);
   })
 
-  // past,  present, or future classes
+  // current time color displays
+var timeblocks = $(?).children()
 
+console.log(timeblocks.css ('color', '?'))
 
+var currentHour;
+
+for (let index = 0; index < timeblocks.length; index++) {
+  console.log('element', element);
+  console.log('element.dataset.time', element.datatset.time)
+  
+}
+if (element.dataset.time === currentHour){
+
+}
+else  (){
+// change class
+}
+else(){
+
+}
   // retreives stored text
-
+  
    
   // display current time (not showing up. Is everything connected correctly? Missing something?)
-  function displayTime() {
-    var currentDate = dayjs().format('MMMM DD, YYYY');
-    timeDisplayEl.text(rightNow);
-  }
+  var today = dayjs();
+  $('#currentDay').text(today.format('MMMM DD, YYYY'));
 });
