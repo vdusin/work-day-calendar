@@ -13,13 +13,13 @@ The user can save typed information into the time blocks and click the save icon
 
 Dev tools can be used by right clicking on the deployed wepage and clicking inspect. This will show the console to the right. 
 
-![screenshot1](assets/images/workfull.png)
-![screenshot2](assets/images/workconsole.png)
+![screenshot1](images/workfull.png)
+![screenshot2](images/workconsole.png)
 
 
-## Credits
+## Link
 
-N/A
+https://vdusin.github.io/work-day-calendar/
 
 ## License
 
